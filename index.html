@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/solar/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="preload">
+        <i class="fas fa-4x fa-spin fa-spinner"></i>
+    </div>
+    <section id="guest">
+        <div class="container">
+            <div id="row" class="row">
+                <div id="bs-str" class="col-md-6">
+                    <div id="form">
+                            <input placeholder="Enter ur email" class="mt-2 mb-2 form-control" type="email" >
+                            <input placeholder="Enter ur password" class="mb-2 form-control" type="password">
+                            <button id="sign-up-btn" class="mb-2 btn btn-success">Sign up</button>
+                            <button id="login" class="btn btn-primary mb-2">Log in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="user">
+        <div class="container">
+            <div id="row2" class="row">
+                <div class="col-md-8">
+                    <div id="form2">
+                        <div id="add-to-todos">
+                            <h1>Add new todo's</h1>
+                            <input style="width:60%; margin:0 auto;" id="name" type="text" class="mb-2 form-control">
+                            <h3>Done:</h3>
+                            <input id="done" type="checkbox" class="mb-4 form-control"><br>
+                            <button id="add" class="mb-4 btn btn-info">Add to todo's list</button>
+                        </div>
+                        <br>
+                        <div>
+                            <h1>Todo's list</h1>
+                            <ul id="todo-list">
+
+                            </ul>
+                            <button id="logout" class="btn btn-warning">Log out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDUA7JglcYZYyxKtR6XYfEz6O16OpGT4XI",
+        authDomain: "fir-2nd-58ae3.firebaseapp.com",
+        databaseURL: "https://fir-2nd-58ae3.firebaseio.com",
+        projectId: "fir-2nd-58ae3",
+        storageBucket: "",
+        messagingSenderId: "115772003395"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
